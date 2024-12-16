@@ -1,0 +1,17 @@
+Install React-Router
+-------------------
+  > npm install react-router
+
+
+If you have any Error then install below ...
+>npm install react-router-dom@5
+
+
+>npm install axios 
+>npm install bootstrap 
+
+
+
+react-fetch API 
+
+npm install react-fetch

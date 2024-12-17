@@ -6,7 +6,7 @@ class ViewEmployeeComponent extends Component {
         super(props)
 
         this.state = {
-            id: this.props.match.params.id,
+            id: this.props.id,
             employee: {}
         }
     }

@@ -21,11 +21,11 @@ console.log({id})
               <HeaderComponent />
                 <div className="container">
                     <Routes> 
-                          <Route path = "/" exact component = {<ListEmployeeComponent />}></Route>
+                          <Route path = "/" exact element = {<ListEmployeeComponent />}></Route>
                           <Route path = "/employees" element = {<ListEmployeeComponent />}></Route>
-                          <Route path = "/add-employee" element = {<CreateEmployeeComponent id={"_add"}/>}></Route>
-                          <Route path = "/view-employee/:id" component = {<ViewEmployeeComponent/>}></Route>
-                          <Route path = "/update-employee/:id" component = {<UpdateEmployeeComponent/>}></Route>
+                          <Route path = "/add-employee/:_add" element = {<CreateEmployeeComponent id={"_add"} />}></Route>
+                          <Route path = "/view-employee/:id" element = {<ViewEmployeeComponent id={id}/>}></Route>
+                          <Route path = "/update-employee/:id" element = {<UpdateEmployeeComponent id={id}/>}></Route>
                     </Routes>
                 </div>
               <FooterComponent />
